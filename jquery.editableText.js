@@ -1,4 +1,4 @@
-/**
+/*!
  * editableText plugin that uses contentEditable property (FF2 is not supported)
  * Project page - http://github.com/valums/editableText
  * Copyright (c) 2009 Andris Valums, http://valums.com
@@ -50,7 +50,7 @@
                 // Save references and attach events
                 editEl = buttons.find('.save').bind('click', { save: true }, stopEditing).end()
                     .find('.cancel').bind('click', { save: false }, stopEditing).end()
-                    .children().css('display', 'none') // Display only edit button
+                    .children().css('display', 'none').end()
                     .find('.edit').bind('click', startEditing).show();
 
             if (!options.newlinesEnabled) {
